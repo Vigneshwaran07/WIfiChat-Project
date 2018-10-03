@@ -1,0 +1,61 @@
+# WIfiChat-Project
+3rd year project, Chat among many devices using same wifi, with the help of Tomcat and Eclipse
+
+
+Create a testing web project
+
+Goto: File >New >Others >New Dynamic Web Project >(Ensure ApacheTomcat v7.0 is in target runtime)>Next>Next>finish
+
+now,expand the testing >WebContent
+
+Right click on Webcotent New>HTML FIle >name it as index.html
+
+Edit the Title and body in the HTML file (refer the images)
+
+Run the server as local host:
+
+Right click on project (Testing) >Run as> Run on Server >Manually define server >choose tomcat v7>
+
+Server's host name: localhost
+
+Server name: Tomcat v7.0 Server
+
+Server run time environment :Apache tomcat v7.0
+
+then finish
+
+press play button (near the url) you can see the html site in eclipse
+
+(http://localhost:8080/testing/)
+
+Run the server with IP address:
+
+Find your IP address:
+
+Windows:command prompt>ipconfig
+
+
+Right click on project (Testing) >Run as> Run on Server >Manually define server >choose tomcat v7>
+
+Server's host name:Your IP address(172.16.34.226 in my case )
+
+(http://172.16.34.226:8080/testing/)
+
+
+Add style.css under WebContent folder ,this contains css style for web User Interface.
+
+Add main.js under Webcontent folder This file contains all the methods required to handle communication between socket server and client. The other things like parsing JSON, appending messages to chat list also taken care in the same file.
+
+in main.js file:
+
+var socket_url = '172.16.34.226'; //replace this with your IP address
+
+Add jquery-1.11.1.min and index.html under Webcontent folder.
+
+Run the server :
+
+WifiChat>Run as>Run on server>
+
+Servers host name:172.16.34.226
+
+URL: http://172.16.34.226:8080/WifiChat/
